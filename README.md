@@ -26,11 +26,12 @@ A brief introduction of code coverage tools and reports
 
 ## Tools
 
+- `Coverage.py` (python)
 - `istanbul` (javascript)
-- `Covertura` (java)
-- `PHPUnit` (php)
-- `coverage.py` (python)
+- `JaCoCo` (java)
+- `mix test --coverage` (elixir)
 - `SimpleCov` (ruby)
+- `Xdebug` (php)
 
 ![bg right](media/image-from-rawpixel-id-3237401-jpeg.jpg)
 <!-- image licence: CC0 -->
