@@ -12,6 +12,18 @@ _footer: _by Paulo Diovani_
 
 A brief introduction of code coverage tools and reports
 
+## Contents
+
+- What is Code Coverage?
+- Tools and reporters
+- Coverage X Quality
+- The coverage summary
+  + Statements
+  + Branches
+  + Functions
+  + Lines
+- Conclusion
+
 ## Tools
 
 - `istanbul` (javascript)
