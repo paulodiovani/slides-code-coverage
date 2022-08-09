@@ -45,6 +45,14 @@ A brief introduction of code coverage tools and reports
 
 ## References
 
+<!--
+footer: '[![license][license-img]][license-link]'
+-->
+
 - https://www.atlassian.com/continuous-delivery/software-testing/code-coverage
+
+
+[license-img]:https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
+[license-link]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 <!-- Presentation created with [Marp](https://marp.app/) -->
