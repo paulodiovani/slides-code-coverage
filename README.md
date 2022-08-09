@@ -8,6 +8,13 @@ _paginate: false
 _footer: _by Paulo Diovani_
 ---
 
+<style>
+/* Add total page number */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+</style>
+
 # Code Coverage
 
 A brief introduction of code coverage tools and reports
@@ -16,13 +23,13 @@ A brief introduction of code coverage tools and reports
 
 - What is Code Coverage?
 - Tools and reporters
-- Coverage X Quality
 - The coverage summary
   + Statements
   + Branches
   + Functions
   + Lines
 - Conclusion
+  + Coverage X Quality
 
 ## Tools
 
@@ -39,3 +46,5 @@ A brief introduction of code coverage tools and reports
 ## References
 
 - https://www.atlassian.com/continuous-delivery/software-testing/code-coverage
+
+<!-- Presentation created with [Marp](https://marp.app/) -->
