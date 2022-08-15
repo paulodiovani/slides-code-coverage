@@ -93,6 +93,13 @@ _footer: Image by martinfowler.com
 
 ---
 
+Monitor coverage is good, but requiring it as a target may lead to bad
+tests and false positives.
+
+![center width:800px](./media/coverage-monitor.png)
+
+---
+
 ## How to read and use the coverage report
 
 - Statements
