@@ -31,14 +31,18 @@ A brief introduction of code coverage tools and reports
 - Conclusion
   + Coverage X Quality
 
+## What is Code Coverage
+
+> Code coverage is a metric that can help you understand how much of your source is tested.
+
 ## Tools
 
+- `Clover`, `Cobertura`, `JaCoCo` (java)
 - `Coverage.py` (python)
-- `istanbul` (javascript)
-- `JaCoCo` (java)
-- `mix test --coverage` (elixir)
+- `PHPUnit`, `Xdebug` (php)
 - `SimpleCov` (ruby)
-- `Xdebug` (php)
+- `istanbul` (javascript)
+- `mix test --coverage` (elixir)
 
 ![bg right](media/image-from-rawpixel-id-3237401-jpeg.jpg)
 <!-- image licence: CC0 -->
