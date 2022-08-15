@@ -26,6 +26,8 @@ img[alt~="center"] {
 
 # Code Coverage
 
+`99% ⬆`
+
 A brief introduction of code coverage, tools, and reports.
 
 ---
