@@ -12,9 +12,15 @@ _footer: _by Paulo Diovani_
 section::after {
   content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 img[alt~="center"] {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 </style>
 
@@ -39,6 +45,10 @@ A brief introduction of code coverage, tools, and reports.
 
 ---
 
+<!--
+_footer: Image by rawpixel.com
+-->
+
 ## Tools
 
 - `Clover`, `Cobertura`, `JaCoCo` (java)
@@ -49,14 +59,16 @@ A brief introduction of code coverage, tools, and reports.
 - `mix test --coverage` (elixir)
 
 ![bg right](media/image-from-rawpixel-id-3237401-jpeg.jpg)
-<!-- image licence: CC0 -->
 
 ---
+
+<!--
+_footer: Image by rawpixel.com
+-->
 
 ## Reporters
 
 ![bg left brightness:0.5](./media/image-from-rawpixel-id-899257-jpeg.jpg)
-<!-- image credits: Image by rawpixel.com -->
 
 - `clover`
 - `cobertura`
@@ -86,13 +98,15 @@ All files         |      100 |       75 |      100 |      100 |                |
   index.ts        |      100 |      100 |      100 |      100 |                |
 ------------------|----------|----------|----------|----------|----------------|
 ```
-
 ___
+
+<!--
+_footer: Image by istanbul.js.org
+-->
 
 ### HTML
 
 ![center width:1024](./media/html-coverage-report.png)
-<!-- image credits: istanbul.js.org -->
 
 ---
 
@@ -105,6 +119,10 @@ ___
 
 ---
 
+<!--
+_footer: Image by martinfowler.com
+-->
+
 ## Conclusion
 
 - Do not simply aim for high coverage
@@ -114,14 +132,13 @@ ___
 > Good coverage does not equal good tests
 
 ![center width:480](./media/coverage-vs-quality.png)
-<!-- image credits: martinfowler.com -->
 
 ---
 
 ## References
 
 <!--
-footer: '[![license][license-img]][license-link]'
+_footer: '[![license][license-img]][license-link]'
 -->
 
 - [atlassian.com/continuous-delivery/software-testing/code-coverage](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage)
