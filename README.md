@@ -110,7 +110,19 @@ _footer: Image by istanbul.js.org
 
 ---
 
-## The coverage report
+<!--
+_footer: Image by martinfowler.com
+-->
+
+###  What percentage of coverage should I aim for? 
+
+> That is not the point...
+
+![center width:480](./media/coverage-vs-quality.png)
+
+---
+
+## How to read and use the coverage report
 
 - Statements
 - Branches
@@ -119,19 +131,74 @@ _footer: Image by istanbul.js.org
 
 ---
 
-<!--
-_footer: Image by martinfowler.com
--->
+### Examples using...
+
+- [istanbul.js.org](https://istanbul.js.org)
+- [github.com/Codeminer42/marvin-cm42](https://github.com/Codeminer42/marvin-cm42/)
+
+```bash
+npx nyc npm test
+```
+
+---
+
+#### Text report (default)
+
+![center width:800px](./media/text-report-001.png)
+
+---
+
+#### HTML report
+
+![center width:1024px](./media/html-report-001.png)
+
+---
+
+![center width:1024px](./media/html-report-002.png)
+
+---
+
+![center width:1024px](./media/html-report-003.png)
+
+![center width:1024px](./media/html-report-004.png)
+
+---
+
+```javascript
+describe('/lib/authenticate', () => {
+  describe('.authenticate', () => {
+    context('when platform is not provided', () => {
+      it('authenticate user with google and returns client', () => {
+        const client = authenticate() // call without args
+
+        // expectations goes here
+      })
+    })
+  })
+
+  // ...
+```
+
+---
+
+![center width:1024px](./media/html-report-005.png)
+
+![center width:1024px](./media/html-report-006.png)
+
+---
+
+## Conclusion
+
+> Good coverage does not equal good tests
+
+---
 
 ## Conclusion
 
 - Do not simply aim for high coverage
-- Monitor coverage increase/deacrease
+- Monitor coverage increase/decrease
 - Use to find untested code
-
-> Good coverage does not equal good tests
-
-![center width:480](./media/coverage-vs-quality.png)
+- Improve tests, not only coverage
 
 ---
 
