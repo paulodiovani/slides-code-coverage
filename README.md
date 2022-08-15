@@ -79,37 +79,6 @@ _footer: Image by rawpixel.com
 
 ---
 
-### Text
-
-```
-------------------|----------|----------|----------|----------|----------------|
-File              |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
-------------------|----------|----------|----------|----------|----------------|
-All files         |      100 |       75 |      100 |      100 |                |
-  src             |      100 |      100 |      100 |      100 |                |
-  errors.ts       |      100 |      100 |      100 |      100 |                |
-  test.ts         |      100 |      100 |      100 |      100 |                |
-  src/config      |      100 |       50 |      100 |      100 |                |
-  index.ts        |      100 |       50 |      100 |      100 |        2,5,6,7 |
-  src/crud        |      100 |      100 |      100 |      100 |                |
-  index.test.ts   |      100 |      100 |      100 |      100 |                |
-  src/crud/insert |      100 |     87.5 |      100 |      100 |                |
-  index.test.ts   |      100 |       50 |      100 |      100 |             25 |
-  index.ts        |      100 |      100 |      100 |      100 |                |
-------------------|----------|----------|----------|----------|----------------|
-```
-___
-
-<!--
-_footer: Image by istanbul.js.org
--->
-
-### HTML
-
-![center width:1024](./media/html-coverage-report.png)
-
----
-
 <!--
 _footer: Image by martinfowler.com
 -->
@@ -138,6 +107,10 @@ _footer: Image by martinfowler.com
 
 ```bash
 npx nyc npm test
+```
+
+```bash
+npx nyc --reporter=html npm test
 ```
 
 ---
