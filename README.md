@@ -38,6 +38,7 @@ A brief introduction of code coverage, tools, and reports.
 - Tools and reporters
 - How to read and use the coverage report?
 - Conclusion
+- References
 
 ---
 
@@ -105,7 +106,7 @@ tests and false positives.
 - Statements
   * `const foo = 123`, `someFn()`
 - Branches
-  * `if (foo === true) {}`, `switch (bar) {}`, `catch (e) {}`
+  * `if (foo === true) {}`, `switch (bar) {}`, `try {} catch (e) {}`
 - Functions
   * `function fn() {}`, `const fn = () => {}`
 - Lines
@@ -136,17 +137,81 @@ npx nyc --reporter=html npm test
 
 #### HTML report
 
-![center width:1024px](./media/html-report-001.png)
+![center width:1024px](./media/html-report-index-01.png)
 
 ---
 
-![center width:1024px](./media/html-report-002.png)
+![center width:1024px](./media/html-report-index-email.png)
 
 ---
 
-![center width:1024px](./media/html-report-003.png)
+![center width:1024px](./media/html-report-email-header-before.png)
 
-![center width:1024px](./media/html-report-004.png)
+![center width:1024px](./media/html-report-email-code-before.png)
+
+---
+
+```javascript
+describe('/lib/retrieveEmail', () => {
+  describe('.getEmail', () => {
+    context('when there are emails', () => {
+      it('read and return the first message', async () => {
+        const email = await getEmail({ from: 'foobar@example.com' })
+
+        expect(email).to.eq('foobar')
+      })
+    })
+  })
+})
+```
+
+---
+
+![center width:1024px](./media/html-report-email-header-after-01.png)
+
+![center width:1024px](./media/html-report-email-code-after-01.png)
+
+---
+
+```javascript
+describe('/lib/retrieveEmail', () => {
+  describe('.getEmail', () => {
+    context('when there are emails', () => {
+      it('read and return the first message', async () => {
+        const email = await getEmail({ from: 'foobar@example.com' })
+
+        expect(email).to.eq('foobar')
+      })
+    })
+
+    context('when there are no emails', () => {
+      it('returns null', async () => {
+        gmailMock.users.messages.list.resolves({ data: { messages: null } })
+
+        const email = await getEmail({ from: 'foobar@example.com' })
+
+        expect(email).to.eq(null)
+      })
+    })
+  })
+})
+```
+
+---
+
+![center width:1024px](./media/html-report-email-header-after-02.png)
+
+![center width:1024px](./media/html-report-email-code-after-02.png)
+
+---
+
+![center width:1024px](./media/html-report-index-authenticate.png)
+
+---
+
+![center width:1024px](./media/html-report-authenticate-header-before.png)
+
+![center width:1024px](./media/html-report-authenticate-code-before.png)
 
 ---
 
@@ -154,22 +219,21 @@ npx nyc --reporter=html npm test
 describe('/lib/authenticate', () => {
   describe('.authenticate', () => {
     context('when platform is not provided', () => {
-      it('authenticate user with google and returns client', () => {
+      it('authenticate user with google by default', () => {
         const client = authenticate() // call without args
 
-        // expectations goes here
+        // expect(client).to.eq(...)
       })
     })
   })
-
-  // ...
+})
 ```
 
 ---
 
-![center width:1024px](./media/html-report-005.png)
+![center width:1024px](./media/html-report-authenticate-header-after.png)
 
-![center width:1024px](./media/html-report-006.png)
+![center width:1024px](./media/html-report-authenticate-code-after.png)
 
 ---
 
