@@ -239,16 +239,16 @@ describe('/lib/authenticate', () => {
 
 ## Conclusion
 
-> Good coverage does not equal good tests
+- Do not simply aim for high coverage
+- Monitor coverage increase/decrease
+- Use to find untested code
+- Improve tests, not only coverage
 
 ---
 
 ## Conclusion
 
-- Do not simply aim for high coverage
-- Monitor coverage increase/decrease
-- Use to find untested code
-- Improve tests, not only coverage
+> Good coverage does not equal good tests
 
 ---
 
