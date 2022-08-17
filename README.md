@@ -97,7 +97,9 @@ _footer: Image by martinfowler.com
 Monitor coverage is good, but requiring it as a target may lead to bad
 tests and false positives.
 
-![center width:800px](./media/coverage-monitor.png)
+![center width:800px](./media/coverage-monitor-jenkins.png)
+
+![center width:800px](./media/coverage-monitor-codecov.png)
 
 ---
 
