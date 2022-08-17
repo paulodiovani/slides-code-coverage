@@ -103,9 +103,13 @@ tests and false positives.
 ## How to read and use the coverage report
 
 - Statements
+  * `const foo = 123`, `someFn()`
 - Branches
+  * `if (foo === true) {}`, `switch (bar) {}`, `catch (e) {}`
 - Functions
+  * `function fn() {}`, `const fn = () => {}`
 - Lines
+  * `...`
 
 ---
 
