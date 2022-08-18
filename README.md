@@ -86,13 +86,17 @@ Monitor coverage is good, but requiring it as a target may lead to bad tests and
 
 ---
 
-### What is a good test?
+<!--
+_footer: Image by rawpixel.com
+-->
 
-🤔
+### What is a good test?
 
 > A good test suite is one that doesn’t take long to run, and if all the tests are passing, provides you with confidence that your software is working as expected.
 >
 > -- codeacademy.com
+
+![bg left](./media/image-from-rawpixel-id-6264634-svg.svg)
 
 ---
 
