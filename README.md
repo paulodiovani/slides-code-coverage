@@ -32,6 +32,18 @@ A brief introduction of code coverage, tools, and reports.
 
 ---
 
+Paulo Diovani Gonçalves
+
+`@paulodiovani`
+
+`linkedin.com/in/paulodiovani`
+
+![width:200px](./media/codeminer.svg)
+
+![bg left brightness:0.5](./media/avatar.jpg)
+
+---
+
 ## Contents
 
 - What is Code Coverage?
