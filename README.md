@@ -69,7 +69,6 @@ Paulo Diovani Gonçalves
 _footer: Image by rawpixel.com
 -->
 
-
 ###  What percentage of coverage should I aim for?
 
 > That is not the point...
@@ -82,7 +81,7 @@ _footer: Image by rawpixel.com
 _footer: Image by martinfowler.com
 -->
 
-> High coverage does not equal good tests
+> High coverage does not equal good tests.
 
 ![center width:480](./media/coverage-vs-quality.png)
 
@@ -114,7 +113,7 @@ _footer: Image by rawpixel.com
 - `Coverage.py` (python)
 - `PHPUnit`, `Xdebug` (php)
 - `SimpleCov` (ruby)
-- `istanbul` (javascript)
+- `istanbul`, `jest` (javascript)
 - `mix test --coverage` (elixir)
 
 ![bg right](media/image-from-rawpixel-id-3237401-jpeg.jpg)
