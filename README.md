@@ -33,6 +33,10 @@ A brief introduction of code coverage, tools, and reports,
 
 ---
 
+<!--
+_footer: codeminer42.com/careers
+-->
+
 Paulo Diovani Gonçalves
 
 `@paulodiovani`
