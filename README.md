@@ -28,7 +28,8 @@ img[alt~="center"] {
 
 `99% ⬆`
 
-A brief introduction of code coverage, tools, and reports.
+A brief introduction of code coverage, tools, and reports,
+  helping you keeping up with code quality.
 
 ---
 
@@ -57,6 +58,41 @@ Paulo Diovani Gonçalves
 ## What is Code Coverage
 
 > Code coverage (a.k.a. test coverage) is a metric that can help you understand how much of your source is tested.
+
+---
+
+<!--
+_footer: Image by martinfowler.com
+-->
+
+###  What percentage of coverage should I aim for?
+
+> That is not the point...
+
+![center width:480](./media/coverage-vs-quality.png)
+
+---
+
+> High coverage does not equal good tests
+
+---
+
+Monitor coverage is good, but requiring it as a target may lead to bad
+tests and false positives.
+
+![center width:800px](./media/coverage-monitor-jenkins.png)
+
+![center width:800px](./media/coverage-monitor-codecov.png)
+
+---
+
+### What is a good test?
+
+🤔
+
+> A good test suite is one that doesn’t take long to run, and if all the tests are passing, provides you with confidence that your software is working as expected.
+>
+> -- codeacademy.com
 
 ---
 
@@ -91,27 +127,6 @@ _footer: Image by rawpixel.com
 - `json`, `json-summary`
 - `lcov`
 - `text`, `text-summary`
-
----
-
-<!--
-_footer: Image by martinfowler.com
--->
-
-###  What percentage of coverage should I aim for? 
-
-> That is not the point...
-
-![center width:480](./media/coverage-vs-quality.png)
-
----
-
-Monitor coverage is good, but requiring it as a target may lead to bad
-tests and false positives.
-
-![center width:800px](./media/coverage-monitor-jenkins.png)
-
-![center width:800px](./media/coverage-monitor-codecov.png)
 
 ---
 
@@ -260,12 +275,6 @@ describe('/lib/authenticate', () => {
 
 ---
 
-## Conclusion
-
-> Good coverage does not equal good tests
-
----
-
 ## References
 
 <!--
@@ -275,6 +284,7 @@ _footer: '[![license][license-img]][license-link]'
 - [atlassian.com/continuous-delivery/software-testing/code-coverage](https://www.atlassian.com/continuous-delivery/software-testing/code-coverage)
 - [martinfowler.com/bliki/TestCoverage.html](https://martinfowler.com/bliki/TestCoverage.html)
 - [istanbul.js.org](https://istanbul.js.org)
+- [codecademy.com/article/tdd-u1-good-test](https://www.codecademy.com/article/tdd-u1-good-test)
 
 
 [license-img]:https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
