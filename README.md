@@ -62,27 +62,27 @@ Paulo Diovani Gonçalves
 ---
 
 <!--
-_footer: Image by martinfowler.com
+_footer: Image by rawpixel.com
 -->
+
 
 ###  What percentage of coverage should I aim for?
 
 > That is not the point...
 
-![center width:480](./media/coverage-vs-quality.png)
+![bg right brightness:0.5](./media/image-from-rawpixel-id-2619266-png.png)
 
 ---
+
+<!--
+_footer: Image by martinfowler.com
+-->
 
 > High coverage does not equal good tests
 
----
+![center width:480](./media/coverage-vs-quality.png)
 
-Monitor coverage is good, but requiring it as a target may lead to bad
-tests and false positives.
-
-![center width:800px](./media/coverage-monitor-jenkins.png)
-
-![center width:800px](./media/coverage-monitor-codecov.png)
+Monitor coverage is good, but requiring it as a target may lead to bad tests and false positives.
 
 ---
 
@@ -127,6 +127,12 @@ _footer: Image by rawpixel.com
 - `json`, `json-summary`
 - `lcov`
 - `text`, `text-summary`
+
+---
+
+![center width:800px](./media/coverage-monitor-jenkins.png)
+
+![center width:800px](./media/coverage-monitor-codecov.png)
 
 ---
 
